@@ -1761,6 +1761,7 @@ def main():
                                     sleep(0.1)
                                 sleep(1.5)
                                 terminal_act_counter += 1
+                                
                             elif terminal_act_counter == 7 and lonely_by_self:
                                 print("(How will you call it?)")
                                 try:
@@ -1813,20 +1814,29 @@ def main():
                                 for c in range(0, len(pline)):
                                     print(pline[c], end="")
                                     sys.stdout.flush()
-                                    sleep(0.05)
+                                    sleep(0.1)
                                 print(f"{enemy_name}:", end=" ")
                                 pline = f"...a game...\n"
                                 for c in range(0, len(pline)):
                                     print(pline[c], end="")
                                     sys.stdout.flush()
-                                    sleep(0.1)
+                                    sleep(0.18)
                                 print(f"{enemy_name}:", end=" ")
                                 pline = f"Yeah! This is a game!!\n"
                                 for c in range(0, len(pline)):
                                     print(pline[c], end="")
                                     sys.stdout.flush()
-                                    sleep(0.1)
-                                sleep(4)
+                                    sleep(0.13)
+                                sleep(1.5)
+                                terminal_act_counter += 1
+
+                            elif terminal_act_counter == 9 and lonely_by_self:
+                                print(f"????????:", end=" ")
+                                print(f"...\n")
+                                sleep(1)
+                                print(f"????????:", end=" ")
+                                print(f"Hey\n")
+                                sleep(2)
                                 print(f"????????:", end=" ")
                                 pline = f"Wanna have a challenge?\n"
                                 for c in range(0, len(pline)):
@@ -1842,7 +1852,7 @@ def main():
                                 sleep(1.5)
                                 terminal_act_counter += 1
 
-                            elif terminal_act_counter == 9 and lonely_by_self:
+                            elif terminal_act_counter == 10 and lonely_by_self:
                                 pygame.mixer.music.stop()
                                 enemy_name = "Pythoras"
                                 print(f"{enemy_name}:", end=" ")
@@ -1862,13 +1872,9 @@ def main():
                                 enemy_health = enemy_max_health
                                 terminal_act_counter += 1
 
-                            elif terminal_act_counter == 10 and lonely_by_self:
+                            elif terminal_act_counter == 11 and lonely_by_self:
                                 print(f"{enemy_name}:", end=" ")
-                                pline = f"First defeat me, mate!\n"
-                                for c in range(0, len(pline)):
-                                    print(pline[c], end="")
-                                    sys.stdout.flush()
-                                    sleep(0.1)
+                                print(f"First defeat me, mate!\n")
                                 sleep(1.5)
 
 
@@ -3373,3 +3379,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
