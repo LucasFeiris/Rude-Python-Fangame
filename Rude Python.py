@@ -1762,7 +1762,7 @@ def main():
                                 sleep(1.5)
                                 terminal_act_counter += 1
                             elif terminal_act_counter == 7 and lonely_by_self:
-                                print("(How will you want to call it?)")
+                                print("(How will you call it?)")
                                 try:
                                     enemy_name = str(input("Its name-> "))
                                     sleep(1)
@@ -3371,4 +3371,5 @@ def main():
     pygame.quit()
 
 if __name__ == "__main__":
+
     main()
